@@ -21,6 +21,9 @@ upload:
 test: img
 	python website/wampws/__init__.py -d --widgeturl ''
 
+ghpages: img freeze
+	cp -R website/wampws/build/* ../wamp-proto.github.io/
+
 test_frozen: img freeze
 	twistd -n web --port=8080 --path=./website/wampws/build
 
