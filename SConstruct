@@ -51,9 +51,9 @@ SVG_FILES = [
    ## WAMP logos
    ##
    'wamp_logo.svg',
-   'wamp_logo_tiny.svg',
-   'wamp_logo_tiny_white.svg',
-   'li_edge.svg',
+   # 'wamp_logo_tiny.svg',
+   # 'wamp_logo_tiny_white.svg',
+   # 'li_edge.svg',
 
    ## Misc
    ##

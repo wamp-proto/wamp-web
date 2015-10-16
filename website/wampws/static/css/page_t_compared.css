@@ -1,10 +1,11 @@
 .introline {
-   color: #fa72c6;
+   /* color: #fa72c6; */
+   color: #000000;
    font-size: 20px;
 }
 
 .section {
-   border-top: 1px solid #fa72c6;
+   border-top: 1px solid #7E8696;
    margin-top: 20px;
    margin-bottom: 60px;
 }
@@ -12,20 +13,20 @@
 .inset {
    width: 90%;
    margin: 40px auto 40px auto;
-   border: 1px solid #fa72c6;
+   border: 1px solid #000000;
    padding: 10px;
 }
 
 #comparison {
    border-collapse: collapse;
    border-spacing: 0 0;
-   border: 1px solid #fa72c6;
+   border: 1px solid #7E8696;
    margin-top: 30px;
    margin-bottom: 120px;
 }
 
 #comparison tr {
-   border-bottom: 1px solid #fa72c6;
+   border-bottom: 1px solid #7E8696;
 }
 
 #comparison td {
@@ -36,7 +37,7 @@
 }
 
 #comparison tr:nth-child(1) {
-   background-color: #fa72c6;
+   background-color: #7E8696;
    color: #fff;
 }
 
@@ -53,7 +54,7 @@
 }
 
 #comparison td:nth-child(1) {
-   border-right: 1px solid #fa72c6;
+   border-right: 1px solid #7E8696;
    text-align: left;
    width: 140px;
 }

@@ -33,18 +33,21 @@ body
 
 a
 {
-   color: #fa72c6;
+   /*color: #fa72c6;*/
+   color: #7E8696;
    text-decoration: underline;
 }
 
 a:visited
 {
-   color: #fa72c6;
+   /*color: #fa72c6;*/
+   color: #7E8696;
 }
 
 a:hover
 {
    color: #f10a9a;
+   color: #000000;
 }
 
 h1
@@ -58,14 +61,16 @@ h2
    color: #7e8696;
    margin-top: 60px;
    margin-bottom: 20px;
-   border-top: solid 2px #fa72c6;
+   /*border-top: solid 2px #fa72c6;*/
+   border-top: solid 2px #7E8696;
    padding-top: 8px;
    padding-left: 12px;
 }
 
 h3
 {
-   color: #fa72c6;
+   /*color: #fa72c6;*/
+   color: #7E8696
    padding-left: 0;
    margin-top: 60px;
 }
@@ -121,11 +126,11 @@ ul
 
 ul li
 {
-   background-image: url("../img/gen/li_edge.svg");
-   background-position: 0 7px;
-   background-size: 10px;
-   background-repeat: no-repeat;
-   list-style-type: none;
+   /* background-image: url("../img/gen/li_edge.svg"); */
+   /* background-position: 0 7px; */
+   /* background-size: 10px; */
+   /* background-repeat: no-repeat; */
+   list-style-type: disc;
    line-height: 1.8em;
    padding-left: 16px;
 }
@@ -160,8 +165,9 @@ ul li
 #logo
 {
    position: absolute;
-   top: 28px;
+   top: -21px;
    left: 0px;
+   width: 211px;
 }
 
 #logo_line
@@ -169,7 +175,7 @@ ul li
    font-size: 32px;
    position: absolute;
    top: 106px;
-   left: 36px;
+   left: 189px;
    width: 600px;
    color: #7e8696;
 }
@@ -188,7 +194,8 @@ ul li
 
 #navbar .navitem_selected
 {
-   color: #fa72c6;
+   /*color: #fa72c6;*/
+   color: #000000;
 }
 
 #navbar .navitem
@@ -209,7 +216,8 @@ ul li
 
 #navbar a:hover
 {
-   color: #fa72c6;
+   /*color: #fa72c6;*/
+   color: #4E4E4E;
 }
 
 #content_wrapper
@@ -268,7 +276,8 @@ ul li
 .up > a:hover
 {
    color: #FFF;
-   background-color: #fa72c6;
+   /*background-color: #fa72c6;*/
+   background-color: #7E8696
    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.6);
    -moz-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.6);
    -webkit-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.6);
@@ -288,7 +297,8 @@ ul li
 }
 
 #toc ul > li {
-   border-top: solid 1px #fa72c6;
+   /*border-top: solid 1px #fa72c6;*/
+   border-top: solid 1px #7E8696;
    list-style-type: none;
    font-size: 18px;
    margin-bottom: 32px;
@@ -373,7 +383,8 @@ ul li
    background-color: #fa72c6;
    */
    font-size: 100%;
-   color: #fa72c6;
+   /*color: #fa72c6;*/
+   color: #7E8696;
    text-decoration: underline;
 }
 
