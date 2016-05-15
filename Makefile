@@ -9,8 +9,24 @@ all:
 	@echo "   clean               Cleanup"
 	@echo ""
 
+clean:
+	rm -rf website/wampws/build
+	rm -rf website/wampws/static/img/gen
+	rm -f ./twistd.log
+	rm -f .sconsign.dblite
+	scons -uc
+
 img:
 	scons img
+
+test: img
+	python website/wampws/__init__.py -d --widgeturl ''
+
+test_frozen: img freeze
+	twistd -n web --port=8080 --path=./website/wampws/build
+
+ghpages: img freeze
+	cp -R website/wampws/build/* ../wamp-proto.github.io/
 
 freeze:
 	python website/wampws/__init__.py -f --widgeturl ''
@@ -18,20 +34,4 @@ freeze:
 upload:
 	scons upload
 
-test: img
-	python website/wampws/__init__.py -d --widgeturl ''
-
-ghpages: img freeze
-	cp -R website/wampws/build/* ../wamp-proto.github.io/
-
-test_frozen: img freeze
-	twistd -n web --port=8080 --path=./website/wampws/build
-
-deploy: img freeze upload
-
-clean:
-	rm -rf website/wampws/build
-	rm -rf website/wampws/static/img/gen
-	rm -f ./twistd.log
-	rm -f .sconsign.dblite
-	scons -uc
+publish: img freeze upload
