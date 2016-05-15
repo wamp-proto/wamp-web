@@ -4,6 +4,10 @@
    border: 1px solid #7E8696;
 }
 
+.wamp2_implementations tr {
+   height: 50px;
+}
+
 .wamp2_implementations tr:nth-child(1) {
    background-color: #7E8696;
    color: #fff;
@@ -11,6 +15,7 @@
 
 .wamp2_implementations td {
    text-align: center;
+   vertical-align: top;
    padding: 4px 8px 4px 8px;
 }
 
