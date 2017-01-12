@@ -4,7 +4,7 @@
       <!-- use Google Chrome Frame on IE when available -->
       <meta http-equiv="X-UA-Compatible" content="chrome=1" />
 
-      <meta charset="utf-8"/> 
+      <meta charset="utf-8"/>
 
       <!-- <link rel="shortcut icon" href="{{ url_for('static', filename = 'img/favicon.ico') }}"> -->
       <link rel="shortcut icon" href="{{ url_for('static', filename = 'img/favicon.png') }}">
@@ -22,7 +22,9 @@
            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-           ga('create', 'UA-23019220-8', 'auto');
+           ga('create', 'UA-23019220-8', 'auto'{
+               anonymizeIp: true
+           });
            ga('send', 'pageview');
          </script>
       {% endif %}
@@ -56,15 +58,15 @@
                   </a>
                   <div id="navbar">
                      <a href="{{ url_for('page_home') }}" {% if session['tab_selected'] == 'home' %} class="navitem_selected" {% else %} class="navitem" {% endif %}>Home</a>
-                     
+
                      <a href="{{ url_for('page_why') }}" {% if session['tab_selected'] == 'why' %} class="navitem_selected" {% else %} class="navitem" {% endif %}>Why WAMP?</a>
-                     
+
                      <a href="{{ url_for('page_compared') }}" {% if session['tab_selected'] == 'compared' %} class="navitem_selected" {% else %} class="navitem" {% endif %}>How does it compare?</a>
-                     
+
                      <a href="{{ url_for('page_implementations') }}" {% if session['tab_selected'] == 'implementations' %} class="navitem_selected" {% else %} class="navitem" {% endif %}>Implementations</a>
-                     
+
                      <a href="{{ url_for('page_spec') }}" {% if session['tab_selected'] == 'spec' %} class="navitem_selected" {% else %} class="navitem" {% endif %}>Specification</a>
-                     
+
                      <a href="{{ url_for('page_faq') }}" {% if session['tab_selected'] == 'faq' %} class="navitem_selected" {% else %} class="navitem" {% endif %}>FAQ</a>
                   </div>
                </div>
