@@ -10,10 +10,11 @@ all:
 	@echo ""
 
 clean:
-	rm -rf website/wampws/build
-	rm -rf website/wampws/static/img/gen
-	rm -f ./twistd.log
-	rm -f .sconsign.dblite
+	-rm -rf website/wampws/build
+	-rm -rf website/wampws/static/img/gen
+	-rm -rf website/wampws/build_uploaded/
+	-rm -f ./twistd.log
+	-rm -f .sconsign.dblite
 	scons -uc
 
 img:
@@ -35,3 +36,7 @@ upload:
 	scons upload
 
 publish: img freeze upload
+
+# this is here because I always forget the quirky syntax
+fix_sth:
+	find . -name "*.html" -exec sed -i"" "s/wamp\.ws/wamp-proto\.org/g" {} \;
