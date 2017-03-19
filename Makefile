@@ -37,6 +37,12 @@ upload:
 
 publish: img freeze upload
 
+# we should remove our custom uploader, replace with the following,
+# but it doesn't work: there is some MIME type issues I suspect ..
+# whatever, no time now. for now, leave it with the GH page stuff
+deploy: img freeze
+	aws s3 sync ./website/wampws/build s3://wamp-proto.org/ --acl public-read --delete --region=eu-west-1
+
 # this is here because I always forget the quirky syntax
 fix_sth:
 	find . -name "*.html" -exec sed -i"" "s/wamp\.ws/wamp-proto\.org/g" {} \;
