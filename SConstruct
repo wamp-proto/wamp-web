@@ -75,7 +75,7 @@ UPLOAD_DIR = 'website/wampws/build'
 UPLOADED_DIR = 'website/wampws/build_uploaded'
 
 # The Tavendo Amazon S3 Bucket to upload to
-BUCKET = 'wamp.ws'
+BUCKET = 'wamp-proto.org'
 
 # The Bucket Prefix to upload files to
 BUCKET_PREFIX = ''

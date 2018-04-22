@@ -1,0 +1,92 @@
+@font-face {
+   font-family: 'Segoe UI';
+   src: local('Segoe UI');
+   font-weight: normal;
+}
+
+@font-face {
+   font-family: 'Segoe UI';
+   src: local('Segoe UI Italic');
+   font-weight: normal;
+   font-style: italic;
+}
+
+@font-face {
+   font-family: 'Segoe UI';
+   src: local('Segoe UI Semibold');
+   font-weight: bold;
+}
+
+@font-face {
+   font-family: 'Segoe UI';
+   src: local('Segoe UI Light');
+   font-weight: 300;
+}
+
+body {
+   font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+/*
+   font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+*/
+   font-size: 16px;
+   line-height: 1.428571429;
+   background-color: #fcfcfc;
+   color: #333;
+}
+
+pre {
+   font-family: Consolas, Menlo, 'DejaVu Sans Mono', 'Courier New', monospace;
+/*
+   font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+*/
+   font-size: 13px;
+}
+
+h1, h2, h3 {
+   font-family: 'Segoe UI', sans-serif-light, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   font-weight: 300;
+}
+
+h1 {
+   color: #ff6600;
+}
+
+h2, h3, h4, h5, h6 {
+   color: #000;
+}
+
+h1 {
+   font-size: 2em;
+   margin: .67em 0;
+}
+
+h2 {
+   font-size: 1.5em;
+   margin: .75em 0;
+}
+
+h3 {
+   font-size: 1.17em;
+   margin: .83em 0;
+}
+
+h4 {
+   font-size: 1em;
+   margin: 1.12em 0;
+}
+
+h5 {
+   font-size: .83em;
+   margin: 1.5em 0;
+}
+
+h6 {
+   font-size: .75em;
+   margin: 1.67em 0;
+}
+
+ul, ol {
+   line-height: 1.6em;
+}
+
+

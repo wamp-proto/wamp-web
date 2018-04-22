@@ -8,7 +8,7 @@
 
       <!-- <link rel="shortcut icon" href="{{ url_for('static', filename = 'img/favicon.ico') }}"> -->
       <link rel="shortcut icon" href="{{ url_for('static', filename = 'img/favicon.png') }}">
-      <link rel="stylesheet" type="text/css" href="{{ session['cstatic'] }}/css/tavendo.css">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/tavendo.css') }}">
       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/layout_t.css') }}">
 
       {% block header %}{% endblock %}
@@ -32,11 +32,13 @@
    <body>
 
       <!-- add community widget -->
+      <!--
       <div id="widgetAnchor"></div>
       <script src="{{ session['widgeturl'] }}/js/communitywidget.js"></script>
       <script>
          clandeck.create_widget({community: "tavendo", topOffset: "80px"});
       </script>
+      -->
 
       {% macro up() -%}
          <div class="up">

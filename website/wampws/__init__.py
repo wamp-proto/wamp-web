@@ -45,36 +45,43 @@ def after_request(response):
 
 
 @app.route('/')
+@app.route('/index.html')
 def page_home():
    session['tab_selected'] = 'home'
    return render_template('page_t_home.html')
 
 @app.route('/impressum/')
+@app.route('/impressum/index.html')
 def page_impressum():
    session['tab_selected'] = 'impressum'
    return render_template('page_t_impressum.html')
 
 @app.route('/why/')
+@app.route('/why/index.html')
 def page_why():
    session['tab_selected'] = 'why'
    return render_template('page_t_why.html', disqus = True)
 
 @app.route('/compared/')
+@app.route('/compared/index.html')
 def page_compared():
    session['tab_selected'] = 'compared'
    return render_template('page_t_compared.html', disqus = True)
 
 @app.route('/faq/')
+@app.route('/faq/index.html')
 def page_faq():
    session['tab_selected'] = 'faq'
    return render_template('page_t_faq.html', disqus = True)
 
 @app.route('/implementations/')
+@app.route('/implementations/index.html')
 def page_implementations():
    session['tab_selected'] = 'implementations'
    return render_template('page_t_implementations.html', disqus = True)
 
 @app.route('/spec/')
+@app.route('/spec/index.html')
 def page_spec():
    session['tab_selected'] = 'spec'
    return render_template('page_t_spec.html')
