@@ -29,7 +29,7 @@ Status of This Memo
    Internet-Drafts are working documents of the Internet Engineering
    Task Force (IETF).  Note that other groups may also distribute
    working documents as Internet-Drafts.  The list of current Internet-
-   Drafts is at http://datatracker.ietf.org/drafts/current/.
+   Drafts is at https://datatracker.ietf.org/drafts/current/.
 
    Internet-Drafts are draft documents valid for a maximum of six months
    and may be updated, replaced, or obsoleted by other documents at any
@@ -45,7 +45,7 @@ Copyright Notice
 
    This document is subject to BCP 78 and the IETF Trust's Legal
    Provisions Relating to IETF Documents
-   (http://trustee.ietf.org/license-info) in effect on the date of
+   (https://trustee.ietf.org/license-info) in effect on the date of
    publication of this document.  Please review these documents
    carefully, as they describe your rights and restrictions with respect
    to this document.  Code Components extracted from this document must
@@ -180,44 +180,44 @@ Internet-Draft                    WAMP                        April 2018
        14.2.3.  Other Advanced Features  . . . . . . . . . . . . . .  65
      14.3.  Advanced RPC Features  . . . . . . . . . . . . . . . . .  65
        14.3.1.  Progressive Call Results . . . . . . . . . . . . . .  65
-       14.3.2.  Progressive Calls  . . . . . . . . . . . . . . . . .  71
-       14.3.3.  Call Timeouts  . . . . . . . . . . . . . . . . . . .  71
-       14.3.4.  Call Canceling . . . . . . . . . . . . . . . . . . .  72
+       14.3.2.  Progressive Calls  . . . . . . . . . . . . . . . . .  73
+       14.3.3.  Call Timeouts  . . . . . . . . . . . . . . . . . . .  73
+       14.3.4.  Call Canceling . . . . . . . . . . . . . . . . . . .  74
        14.3.5.  Caller Identification  . . . . . . . . . . . . . . .  77
        14.3.6.  Call Trust Levels  . . . . . . . . . . . . . . . . .  78
-       14.3.7.  Registration Meta API  . . . . . . . . . . . . . . .  78
+       14.3.7.  Registration Meta API  . . . . . . . . . . . . . . .  79
        14.3.8.  Pattern-based Registrations  . . . . . . . . . . . .  85
        14.3.9.  Shared Registration  . . . . . . . . . . . . . . . .  90
        14.3.10. Sharded Registration . . . . . . . . . . . . . . . .  92
        14.3.11. Registration Revocation  . . . . . . . . . . . . . .  92
-       14.3.12. Procedure Reflection . . . . . . . . . . . . . . . .  92
-     14.4.  Advanced PubSub Features . . . . . . . . . . . . . . . .  94
-       14.4.1.  Subscriber Black- and Whitelisting . . . . . . . . .  94
-       14.4.2.  Publisher Exclusion  . . . . . . . . . . . . . . . .  98
-       14.4.3.  Publisher Identification . . . . . . . . . . . . . .  99
-       14.4.4.  Publication Trust Levels . . . . . . . . . . . . . . 100
-       14.4.5.  Subscription Meta API  . . . . . . . . . . . . . . . 101
-       14.4.6.  Pattern-based Subscriptions  . . . . . . . . . . . . 106
-       14.4.7.  Sharded Subscriptions  . . . . . . . . . . . . . . . 110
-       14.4.8.  Event History  . . . . . . . . . . . . . . . . . . . 110
-       14.4.9.  Registration Revocation  . . . . . . . . . . . . . . 112
-       14.4.10. Topic Reflection . . . . . . . . . . . . . . . . . . 112
-       14.4.11. Testament  . . . . . . . . . . . . . . . . . . . . . 113
-     14.5.  Other Advanced Features  . . . . . . . . . . . . . . . . 115
-       14.5.1.  Session Meta API . . . . . . . . . . . . . . . . . . 115
-       14.5.2.  Authentication . . . . . . . . . . . . . . . . . . . 119
-       14.5.3.  Alternative Transports . . . . . . . . . . . . . . . 140
-   15. Binary conversion of JSON Strings . . . . . . . . . . . . . . 152
-     15.1.  Python . . . . . . . . . . . . . . . . . . . . . . . . . 153
-     15.2.  JavaScript . . . . . . . . . . . . . . . . . . . . . . . 153
-   16. Security Considerations . . . . . . . . . . . . . . . . . . . 154
-   17. IANA Considerations . . . . . . . . . . . . . . . . . . . . . 155
-   18. Contributors  . . . . . . . . . . . . . . . . . . . . . . . . 155
-   19. Acknowledgements  . . . . . . . . . . . . . . . . . . . . . . 156
-   20. References  . . . . . . . . . . . . . . . . . . . . . . . . . 156
-     20.1.  Normative References . . . . . . . . . . . . . . . . . . 156
-     20.2.  Informative References . . . . . . . . . . . . . . . . . 156
-     20.3.  URIs . . . . . . . . . . . . . . . . . . . . . . . . . . 156
+       14.3.12. Procedure Reflection . . . . . . . . . . . . . . . .  93
+     14.4.  Advanced PubSub Features . . . . . . . . . . . . . . . .  95
+       14.4.1.  Subscriber Black- and Whitelisting . . . . . . . . .  95
+       14.4.2.  Publisher Exclusion  . . . . . . . . . . . . . . . .  99
+       14.4.3.  Publisher Identification . . . . . . . . . . . . . . 100
+       14.4.4.  Publication Trust Levels . . . . . . . . . . . . . . 101
+       14.4.5.  Subscription Meta API  . . . . . . . . . . . . . . . 102
+       14.4.6.  Pattern-based Subscriptions  . . . . . . . . . . . . 107
+       14.4.7.  Sharded Subscriptions  . . . . . . . . . . . . . . . 111
+       14.4.8.  Event History  . . . . . . . . . . . . . . . . . . . 111
+       14.4.9.  Subscription Revocation  . . . . . . . . . . . . . . 113
+       14.4.10. Topic Reflection . . . . . . . . . . . . . . . . . . 114
+       14.4.11. Testament  . . . . . . . . . . . . . . . . . . . . . 114
+     14.5.  Other Advanced Features  . . . . . . . . . . . . . . . . 117
+       14.5.1.  Session Meta API . . . . . . . . . . . . . . . . . . 117
+       14.5.2.  Authentication . . . . . . . . . . . . . . . . . . . 124
+       14.5.3.  Alternative Transports . . . . . . . . . . . . . . . 145
+   15. Binary conversion of JSON Strings . . . . . . . . . . . . . . 157
+     15.1.  Python . . . . . . . . . . . . . . . . . . . . . . . . . 158
+     15.2.  JavaScript . . . . . . . . . . . . . . . . . . . . . . . 158
+   16. Security Considerations . . . . . . . . . . . . . . . . . . . 159
+   17. IANA Considerations . . . . . . . . . . . . . . . . . . . . . 160
+   18. Contributors  . . . . . . . . . . . . . . . . . . . . . . . . 160
+   19. Acknowledgements  . . . . . . . . . . . . . . . . . . . . . . 161
+   20. References  . . . . . . . . . . . . . . . . . . . . . . . . . 161
+     20.1.  Normative References . . . . . . . . . . . . . . . . . . 161
+     20.2.  Informative References . . . . . . . . . . . . . . . . . 161
+     20.3.  URIs . . . . . . . . . . . . . . . . . . . . . . . . . . 161
 
 
 
@@ -226,7 +226,7 @@ Oberstein & Goedde      Expires October 20, 2018                [Page 4]
 Internet-Draft                    WAMP                        April 2018
 
 
-   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . . 158
+   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . . 163
 
 1.  Introduction
 
@@ -1068,9 +1068,7 @@ Internet-Draft                    WAMP                        April 2018
 
        ,------.                                    ,------.
        | Peer |                                    | Peer |
-       `--+---'                                    `--+---'
-
-                         TCP established
+       `--+---'          TCP established           `--+---'
           |<----------------------------------------->|
           |                                           |
           |               TLS established             |
@@ -1102,7 +1100,6 @@ Internet-Draft                    WAMP                        April 2018
           |                                           |
           |               TCP closed                  |
           |<----------------------------------------->|
-
        ,--+---.                                    ,--+---.
        | Peer |                                    | Peer |
        `------'                                    `------'
@@ -1115,14 +1112,15 @@ Internet-Draft                    WAMP                        April 2018
 
    Following scenarios have to be considered protocol errors:
 
+   o  Receiving "WELCOME" message, after session was established.
+
+
 
 
 Oberstein & Goedde      Expires October 20, 2018               [Page 20]
 
 Internet-Draft                    WAMP                        April 2018
 
-
-   o  Receiving "WELCOME" message, after session was established.
 
    o  Receiving "HELLO" message, after session was established.
 
@@ -1170,6 +1168,8 @@ Internet-Draft                    WAMP                        April 2018
 
    3.  SHOULD also drop the WAMP connection at transport level
        (recommended to prevent denial of service attacks)
+
+
 
 
 
@@ -1315,14 +1315,13 @@ Internet-Draft                    WAMP                        April 2018
    Error reply sent by a Peer as an error response to different kinds of
    requests.
 
-       [ERROR, REQUEST.Type|int, REQUEST.Request|id, Details|dict,
-           Error|uri]
+    [ERROR, REQUEST.Type|int, REQUEST.Request|id, Details|dict, Error|uri]
 
-       [ERROR, REQUEST.Type|int, REQUEST.Request|id, Details|dict,
-           Error|uri, Arguments|list]
+    [ERROR, REQUEST.Type|int, REQUEST.Request|id, Details|dict, Error|uri,
+        Arguments|list]
 
-       [ERROR, REQUEST.Type|int, REQUEST.Request|id, Details|dict,
-           Error|uri, Arguments|list, ArgumentsKw|dict]
+    [ERROR, REQUEST.Type|int, REQUEST.Request|id, Details|dict, Error|uri,
+        Arguments|list, ArgumentsKw|dict]
 
 6.4.2.  Publish & Subscribe
 
@@ -1332,11 +1331,12 @@ Internet-Draft                    WAMP                        April 2018
 
        [PUBLISH, Request|id, Options|dict, Topic|uri]
 
-       [PUBLISH, Request|id, Options|dict, Topic|uri,
-           Arguments|list]
+       [PUBLISH, Request|id, Options|dict, Topic|uri, Arguments|list]
 
-       [PUBLISH, Request|id, Options|dict, Topic|uri,
-           Arguments|list, ArgumentsKw|dict]
+       [PUBLISH, Request|id, Options|dict, Topic|uri, Arguments|list,
+          ArgumentsKw|dict]
+
+
 
 
 
@@ -2085,7 +2085,7 @@ Internet-Draft                    WAMP                        April 2018
 
    All of the following features for Publish & Subscribe are mandatory
    for WAMP Basic Profile implementations supporting the respective
-   roles, i.e. _Publisher_, _Subscriber_ and _Dealer_.
+   roles, i.e. _Publisher_, _Subscriber_ and _Broker_.
 
 9.1.  Subscribing and Unsubscribing
 
@@ -2410,7 +2410,7 @@ Oberstein & Goedde      Expires October 20, 2018               [Page 43]
 Internet-Draft                    WAMP                        April 2018
 
 
-   If the Broker is able to fulfill and allowing the publication, the
+   If the Broker allows and is able to fulfill the publication, the
    Broker will send the event to all current Subscribers of the topic of
    the published event.
 
@@ -3496,14 +3496,14 @@ Internet-Draft                    WAMP                        April 2018
    messages* defined in this part of the document and their direction
    between peer roles.
 
-    +-----+----------------+-----+-----+------+------+-------+--------+
-    | Cod |    Message     | Pub | Brk | Subs | Calr | Dealr | Callee |
-    +-----+----------------+-----+-----+------+------+-------+--------+
-    |  4  |  "CHALLENGE"   |  Rx |  Tx |  Rx  |  Rx  |   Tx  |   Rx   |
-    |  5  | "AUTHENTICATE" |  Tx |  Rx |  Tx  |  Tx  |   Rx  |   Tx   |
-    |  49 |    "CANCEL"    |     |     |      |  Tx  |   Rx  |        |
-    |  69 |  "INTERRUPT"   |     |     |      |      |   Tx  |   Rx   |
-    +-----+----------------+-----+-----+------+------+-------+--------+
+   +-----+----------------+-----+-----+------+------+-------+--------+
+   | Cod |    Message     | Pub | Brk | Subs | Calr | Dealr | Callee |
+   +-----+----------------+-----+-----+------+------+-------+--------+
+   |  4  |  "CHALLENGE"   |  Rx |  Tx |  Rx  |  Rx  |   Tx  |   Rx   |
+   |  5  | "AUTHENTICATE" |  Tx |  Rx |  Tx  |  Tx  |   Rx  |   Tx   |
+   |  49 |    "CANCEL"    |     |     |      |  Tx  |   Rx  |        |
+   |  69 |  "INTERRUPT"   |     |     |      |      |   Tx  |   Rx   |
+   +-----+----------------+-----+-----+------+------+-------+--------+
 
       "Tx" ("Rx") means the message is sent (received) by a peer of the
       respective role.
@@ -3545,7 +3545,7 @@ Internet-Draft                    WAMP                        April 2018
    |        |       details may still be incomplete and change.        |
    | stable |    The feature definition in the spec is complete and    |
    |        | stable and the feature use case is field proven in real  |
-   |        |     applications. There are multiple, interoperatble     |
+   |        |     applications. There are multiple, interoperable      |
    |        |                     implementations.                     |
    +--------+----------------------------------------------------------+
 
@@ -3642,38 +3642,38 @@ Oberstein & Goedde      Expires October 20, 2018               [Page 65]
 Internet-Draft                    WAMP                        April 2018
 
 
-               ,------.           ,------.          ,------.
-               |Caller|           |Dealer|          |Callee|
-               `--+---'           `--+---'          `--+---'
-                  |       CALL       |                 |
-                  | ----------------->                 |
-                  |                  |                 |
-                  |                  |    INVOCATION   |
-                  |                  | ---------------->
-                  |                  |                 |
-                  |                  | YIELD (progress)|
-                  |                  | <----------------
-                  |                  |                 |
-                  | RESULT (progress)|                 |
-                  | <-----------------                 |
-                  |                  |                 |
-                  |                  | YIELD (progress)|
-                  |                  | <----------------
-                  |                  |                 |
-                  | RESULT (progress)|                 |
-                  | <-----------------                 |
-                  |                  |                 |
-                  |                  |                 |
-                  |       ...        |       ...       |
-                  |                  |                 |
-                  |                  |  YIELD or ERROR |
-                  |                  | <----------------
-                  |                  |                 |
-                  |  RESULT or ERROR |                 |
-                  | <-----------------                 |
-               ,--+---.           ,--+---.          ,--+---.
-               |Caller|           |Dealer|          |Callee|
-               `------'           `------'          `------'
+    ,------.           ,------.          ,------.
+    |Caller|           |Dealer|          |Callee|
+    `--+---'           `--+---'          `--+---'
+       |       CALL       |                 |
+       | ----------------->                 |
+       |                  |                 |
+       |                  |    INVOCATION   |
+       |                  | ---------------->
+       |                  |                 |
+       |                  | YIELD (progress)|
+       |                  | <----------------
+       |                  |                 |
+       | RESULT (progress)|                 |
+       | <-----------------                 |
+       |                  |                 |
+       |                  | YIELD (progress)|
+       |                  | <----------------
+       |                  |                 |
+       | RESULT (progress)|                 |
+       | <-----------------                 |
+       |                  |                 |
+       |                  |                 |
+       |       ...        |       ...       |
+       |                  |                 |
+       |                  |  YIELD or ERROR |
+       |                  | <----------------
+       |                  |                 |
+       |  RESULT or ERROR |                 |
+       | <-----------------                 |
+    ,--+---.           ,--+---.          ,--+---.
+    |Caller|           |Dealer|          |Callee|
+    `------'           `------'          `------'
 
    A _Caller_ indicates its willingness to receive progressive results
    by setting
@@ -3790,7 +3790,7 @@ Internet-Draft                    WAMP                        April 2018
            ["Y2011", 205]
        ]
 
-   ...
+   and so on...
 
    An invocation MUST _always_ end in either a _normal_ "RESULT" or
    "ERROR" message being sent by the _Callee_ and received by the
@@ -3939,12 +3939,86 @@ Internet-Draft                    WAMP                        April 2018
    any produced.  In other words, _Callees_ are free to ignore such
    "receive_progress" hints at any time.
 
-14.3.1.2.  Callee
+14.3.1.2.  Progressive Call Result Cancellation
 
-   A Callee that does not support progressive results SHOULD ignore any
-   "INVOCATION.Details.receive_progress" flag.
+   Upon receiving a "YIELD" message from a _Callee_ with
+   "YIELD.Options.progress == true" (for a call that is still ongoing),
+   if the original _Caller_ is no longer available (has left the realm),
+   then the _Dealer_ will send an "INTERRUPT" to the _Callee_.  The
+   "INTERRUPT" will have "Options.mode" set to ""killnowait"" to
+   indicate to the client that no response should be sent to the
+   "INTERRUPT".  This "INTERRUPT" in only sent in response to a
+   progressive "YIELD" ("Details.progress == true"), and is not sent in
+   response to a normal or final "YIELD".
 
-14.3.1.3.  Feature Announcement
+             [INTERRUPT, INVOCATION.Request|id, Options|dict]
+
+   Options:
+
+               INTERRUPT.Options.mode|string == "killnowait"
+
+   Progressive call result cancellation closes an important safety gap:
+   In cases where progressive results are used to stream data to
+   _Callers_, and network connectivity is unreliable, _Callers_ my often
+   get disconnected in the middle of receiving progressive results.
+   Recurring connect, call, disconnect cycles can quickly build up
+   _Callees_ streaming results to dead _Callers_. This can overload the
+   router and further degrade network connectivity.
+
+   The message flow for progressive results cancellation involves:
+
+
+
+
+
+
+
+Oberstein & Goedde      Expires October 20, 2018               [Page 71]
+
+Internet-Draft                    WAMP                        April 2018
+
+
+    ,------.           ,------.          ,------.
+    |Caller|           |Dealer|          |Callee|
+    `--+---'           `--+---'          `--+---'
+       |       CALL       |                 |
+       | ----------------->                 |
+       |                  |                 |
+       |                  |    INVOCATION   |
+       |                  | ---------------->
+       |                  |                 |
+       |                  | YIELD (progress)|
+       |                  | <----------------
+       |                  |                 |
+       | RESULT (progress)|                 |
+       | <-----------------                 |
+    ,--+---.              |                 |
+    |Caller|              |                 |
+    `------'              | YIELD (progress)|
+     (gone)               | <----------------
+                          |                 |
+                          |    INTERRUPT    |
+                          | ---------------->
+                          |                 |
+                       ,--+---.          ,--+---.
+                       |Dealer|          |Callee|
+                       `------'          `------'
+
+   Note: Any "ERROR" returned by the _Callee_, in response to the
+   "INTERRUPT", is ignored (same as in call canceling when
+   mode="killnowait").  So, it is not necessary for the _Callee_ to send
+   an "ERROR" message.
+
+14.3.1.3.  Callee
+
+   A _Callee_ that does not support progressive results SHOULD ignore
+   any "INVOCATION.Details.receive_progress" flag.
+
+   A _Callee_ that supports progressive results, but does not support
+   call canceling is considered by the _Dealer_ to not support
+   progressive results.
+
+14.3.1.4.  Feature Announcement
 
    Support for this advanced feature MUST be announced by _Callers_
    ("role := "caller""), _Callees_ ("role := "callee"") and _Dealers_
@@ -3952,6 +4026,19 @@ Internet-Draft                    WAMP                        April 2018
 
        HELLO.Details.roles.<role>.features.
             progressive_call_results|bool := true
+
+
+
+Oberstein & Goedde      Expires October 20, 2018               [Page 72]
+
+Internet-Draft                    WAMP                        April 2018
+
+
+   Additionally, _Callees_ and _Dealers_ MUST support Call Canceling,
+   which is required for canceling progressive results if the original
+   _Caller_ leaves the realm.  If a _Callee_ supports Progressive Call
+   Results, but not Call Canceling, then the _Dealer_ disregards the
+   _Callees_ Progressive Call Results feature.
 
 14.3.2.  Progressive Calls
 
@@ -3967,24 +4054,13 @@ Internet-Draft                    WAMP                        April 2018
 
 14.3.3.  Call Timeouts
 
-
-
-
-
-
-
-Oberstein & Goedde      Expires October 20, 2018               [Page 71]
-
-Internet-Draft                    WAMP                        April 2018
-
-
 14.3.3.1.  Feature Definition
 
-   A _Caller_ might want to issue a call providing a _timeout_ for the
-   call to finish.
+   A _Caller_ might want to issue a call and provide a _timeout_ after
+   which the call will finish.
 
-   A _timeout_ allows to *automatically* cancel a call after a specified
-   time either at the _Callee_ or at the _Dealer_.
+   A _timeout_ allows for *automatic* cancellation of a call after a
+   specified time either at the _Callee_ or at the _Dealer_.
 
    A _Caller_ specifies a timeout by providing
 
@@ -4004,6 +4080,15 @@ Internet-Draft                    WAMP                        April 2018
    o  _Dealer_
 
    o  _Callee_
+
+
+
+
+
+Oberstein & Goedde      Expires October 20, 2018               [Page 73]
+
+Internet-Draft                    WAMP                        April 2018
+
 
 14.3.3.2.  Feature Announcement
 
@@ -4027,19 +4112,12 @@ Internet-Draft                    WAMP                        April 2018
 
    o  "CANCEL"
 
-
-
-Oberstein & Goedde      Expires October 20, 2018               [Page 72]
-
-Internet-Draft                    WAMP                        April 2018
-
-
    o  "INTERRUPT"
 
    o  "ERROR"
 
    A call may be canceled at the _Callee_ or at the _Dealer_ side.
-   Cancelation behaves differently depending on the mode:
+   Cancellation behaves differently depending on the mode:
 
    o  *skip*: The pending call is canceled and "ERROR" is sent
       immediately back to the caller.  No "INTERRUPT" is sent to the
@@ -4051,7 +4129,7 @@ Internet-Draft                    WAMP                        April 2018
       "ERROR" depending whether the callee finishes processing the
       invocation or the interrupt first.
 
-   o  *killnowait*: The pending call is canceled and "ERROR" is send
+   o  *killnowait*: The pending call is canceled and "ERROR" is sent
       immediately back to the caller.  "INTERRUPT" is sent to the callee
       and any response to the invocation or interrupt from the callee is
       discarded when received.
@@ -4059,36 +4137,17 @@ Internet-Draft                    WAMP                        April 2018
    If the callee does not support call canceling, then behavior is
    *skip*.
 
-   Message flow during call canceling when _Callee_ supports this
-   feature and mode is "kill"
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Oberstein & Goedde      Expires October 20, 2018               [Page 73]
+Oberstein & Goedde      Expires October 20, 2018               [Page 74]
 
 Internet-Draft                    WAMP                        April 2018
 
+
+   Message flow during call canceling when _Callee_ supports this
+   feature and mode is "kill"
 
        ,------.          ,------.          ,------.
        |Caller|          |Dealer|          |Callee|
@@ -4138,10 +4197,7 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-
-
-
-Oberstein & Goedde      Expires October 20, 2018               [Page 74]
+Oberstein & Goedde      Expires October 20, 2018               [Page 75]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -4173,35 +4229,6 @@ Internet-Draft                    WAMP                        April 2018
    Message flow during call canceling when _Callee_ supports this
    feature and mode is "killnowait"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Oberstein & Goedde      Expires October 20, 2018               [Page 75]
-
-Internet-Draft                    WAMP                        April 2018
-
-
        ,------.          ,------.          ,------.
        |Caller|          |Dealer|          |Callee|
        `--+---'          `--+---'          `--+---'
@@ -4219,12 +4246,17 @@ Internet-Draft                    WAMP                        April 2018
           |                 |    INTERRUPT    |
           |                 | ---------------->
           |                 |                 |
-          |                 |      ERROR      |
-          |                 | <----------------
-          |                 |                 |
        ,--+---.          ,--+---.          ,--+---.
        |Caller|          |Dealer|          |Callee|
        `------'          `------'          `------'
+
+
+
+
+Oberstein & Goedde      Expires October 20, 2018               [Page 76]
+
+Internet-Draft                    WAMP                        April 2018
+
 
    A _Caller_ cancels a remote procedure call initiated (but not yet
    finished) by sending a "CANCEL" message to the _Dealer_:
@@ -4240,6 +4272,11 @@ Internet-Draft                    WAMP                        April 2018
 
        CANCEL.Options.mode|string == "skip" | "kill" | "killnowait"
 
+   Note: After the _Dealer_ sends an "INTERRUPT" when mode="killnowait",
+   any responses from the _Callee_ are ignored.  This means that it is
+   not necessary for the _Callee_ to respond with an "ERROR" message,
+   when mode="killnowait", since the _Dealer_ ignores it.
+
 14.3.4.2.  Feature Announcement
 
    Support for this feature MUST be announced by _Callers_ ("role :=
@@ -4247,16 +4284,6 @@ Internet-Draft                    WAMP                        April 2018
    "dealer"") via
 
        HELLO.Details.roles.<role>.features.call_canceling|bool := true
-
-
-
-
-
-
-Oberstein & Goedde      Expires October 20, 2018               [Page 76]
-
-Internet-Draft                    WAMP                        April 2018
-
 
 14.3.5.  Caller Identification
 
@@ -4280,6 +4307,13 @@ Internet-Draft                    WAMP                        April 2018
 
        [68, 6131533, 9823526, {"caller": 3335656}, ["Hello, world!"]]
 
+
+
+Oberstein & Goedde      Expires October 20, 2018               [Page 77]
+
+Internet-Draft                    WAMP                        April 2018
+
+
    Note that a _Dealer_ MAY disclose the identity of a _Caller_ even
    without the _Caller_ having explicitly requested to do so when the
    _Dealer_ configuration (for the called procedure) is setup to do so.
@@ -4302,18 +4336,6 @@ Internet-Draft                    WAMP                        April 2018
    With the above registration, the registered procedure is called with
    the caller's sessionID as part of the call details object.
 
-
-
-
-
-
-
-
-Oberstein & Goedde      Expires October 20, 2018               [Page 77]
-
-Internet-Draft                    WAMP                        April 2018
-
-
 14.3.5.2.  Feature Announcement
 
    Support for this feature MUST be announced by _Callers_ ("role :=
@@ -4325,7 +4347,7 @@ Internet-Draft                    WAMP                        April 2018
 
 14.3.6.  Call Trust Levels
 
-14.3.6.1.  Feature Defintion
+14.3.6.1.  Feature Definition
 
    A _Dealer_ may be configured to automatically assign _trust levels_
    to calls issued by _Callers_ according to the _Dealer_ configuration
@@ -4339,6 +4361,14 @@ Internet-Draft                    WAMP                        April 2018
    in an "INVOCATION" message sent to a _Callee_. The trustlevel "0"
    means lowest trust, and higher integers represent (application-
    defined) higher levels of trust.
+
+
+
+
+Oberstein & Goedde      Expires October 20, 2018               [Page 78]
+
+Internet-Draft                    WAMP                        April 2018
+
 
    _Example_
 
@@ -4358,17 +4388,6 @@ Internet-Draft                    WAMP                        April 2018
 14.3.7.  Registration Meta API
 
 14.3.7.1.  Feature Definition
-
-
-
-
-
-
-
-Oberstein & Goedde      Expires October 20, 2018               [Page 78]
-
-Internet-Draft                    WAMP                        April 2018
-
 
 14.3.7.1.1.  Introduction
 
@@ -4400,6 +4419,13 @@ Internet-Draft                    WAMP                        April 2018
    o  "wamp.registration.on_register": Fired when a _Callee_ session is
       added to a registration.
 
+
+
+Oberstein & Goedde      Expires October 20, 2018               [Page 79]
+
+Internet-Draft                    WAMP                        April 2018
+
+
    o  "wamp.registration.on_unregister": Fired when a _Callee_ session
       is removed from a registration.
 
@@ -4417,14 +4443,6 @@ Internet-Draft                    WAMP                        April 2018
 
    *Registration Meta Events* MUST be dispatched by the router to the
    same realm as the WAMP session which triggered the event.
-
-
-
-
-Oberstein & Goedde      Expires October 20, 2018               [Page 79]
-
-Internet-Draft                    WAMP                        April 2018
-
 
 14.3.7.1.2.1.  wamp.registration.on_create
 
@@ -4453,6 +4471,17 @@ Internet-Draft                    WAMP                        April 2018
 
       NOTE: invocation_policy IS NOT YET DESCRIBED IN THE ADVANCED SPEC
 
+
+
+
+
+
+
+Oberstein & Goedde      Expires October 20, 2018               [Page 80]
+
+Internet-Draft                    WAMP                        April 2018
+
+
 14.3.7.1.2.2.  wamp.registration.on_register
 
    Fired when a session is added to a registration.  The event payload
@@ -4473,14 +4502,6 @@ Internet-Draft                    WAMP                        April 2018
 
    o  "registration|id": The ID of the registration from which a session
       is being removed.
-
-
-
-
-Oberstein & Goedde      Expires October 20, 2018               [Page 80]
-
-Internet-Draft                    WAMP                        April 2018
-
 
 14.3.7.1.2.4.  wamp.registration.on_delete
 
@@ -4510,6 +4531,13 @@ Internet-Draft                    WAMP                        April 2018
    o  "wamp.registration.get": Retrieves information on a particular
       registration.
 
+
+
+Oberstein & Goedde      Expires October 20, 2018               [Page 81]
+
+Internet-Draft                    WAMP                        April 2018
+
+
    o  "wamp.registration.list_callees": Retrieves a list of session IDs
       for sessions currently attached to the registration.
 
@@ -4530,13 +4558,6 @@ Internet-Draft                    WAMP                        April 2018
       IDs for each match policy.
 
    *Object Schemas*
-
-
-
-Oberstein & Goedde      Expires October 20, 2018               [Page 81]
-
-Internet-Draft                    WAMP                        April 2018
-
 
        RegistrationLists :=
        {
@@ -4565,6 +4586,14 @@ Internet-Draft                    WAMP                        April 2018
    o  (Nullable) "registration|id": The ID of the registration managing
       the procedure, if found, or null.
 
+
+
+
+Oberstein & Goedde      Expires October 20, 2018               [Page 82]
+
+Internet-Draft                    WAMP                        April 2018
+
+
 14.3.7.1.3.3.  wamp.registration.match
 
    Obtains the registration best matching a given procedure URI.
@@ -4585,14 +4614,6 @@ Internet-Draft                    WAMP                        April 2018
    *Arguments*
 
    o  "registration|id": The ID of the registration to retrieve.
-
-
-
-
-Oberstein & Goedde      Expires October 20, 2018               [Page 82]
-
-Internet-Draft                    WAMP                        April 2018
-
 
    *Results*
 
@@ -4619,6 +4640,16 @@ Internet-Draft                    WAMP                        April 2018
 
    _NOTE: invocation_policy IS NOT YET DESCRIBED IN THE ADVANCED SPEC_
 
+
+
+
+
+
+Oberstein & Goedde      Expires October 20, 2018               [Page 83]
+
+Internet-Draft                    WAMP                        April 2018
+
+
 14.3.7.1.3.5.  wamp.registration.list_callees
 
    Retrieves a list of session IDs for sessions currently attached to
@@ -4626,7 +4657,7 @@ Internet-Draft                    WAMP                        April 2018
 
    *Arguments*
 
-   o  "registration|id": The ID of the registration to get calles for.
+   o  "registration|id": The ID of the registration to get callees for.
 
    *Results*
 
@@ -4637,18 +4668,6 @@ Internet-Draft                    WAMP                        April 2018
 
    o  "wamp.error.no_such_registration": No registration with the given
       ID exists on the router.
-
-
-
-
-
-
-
-
-Oberstein & Goedde      Expires October 20, 2018               [Page 83]
-
-Internet-Draft                    WAMP                        April 2018
-
 
 14.3.7.1.3.6.  wamp.registration.count_callees
 
@@ -4679,25 +4698,6 @@ Internet-Draft                    WAMP                        April 2018
 
    *Example*
 
-   Here is a "WELCOME" message from a _Router_ with support for both the
-   _Broker_ and _Dealer_ role, and with support for *Registration Meta
-   API*:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -4705,6 +4705,10 @@ Oberstein & Goedde      Expires October 20, 2018               [Page 84]
 
 Internet-Draft                    WAMP                        April 2018
 
+
+   Here is a "WELCOME" message from a _Router_ with support for both the
+   _Broker_ and _Dealer_ role, and with support for *Registration Meta
+   API*:
 
        [
            2,
@@ -4749,10 +4753,6 @@ Internet-Draft                    WAMP                        April 2018
    o  *prefix-matching policy*
 
    o  *wildcard-matching policy*
-
-
-
-
 
 
 
@@ -4939,24 +4939,24 @@ Internet-Draft                    WAMP                        April 2018
        6. 'a1.b2..d4.e5..g7',
        7. 'a1.b2..d4..f6.g7'
 
-   Call request RPC URI: 'a1.b2.c3.d4.e55' \u002D->
+   Call request RPC URI: 'a1.b2.c3.d4.e55' -->
        exact match. Use RPC 1
-   Call request RPC URI: 'a1.b2.c3.d98.e74' \u002D->
+   Call request RPC URI: 'a1.b2.c3.d98.e74' -->
        no exact match, single prefix match. Use RPC 2
-   Call request RPC URI: 'a1.b2.c3.d4.e325' \u002D->
+   Call request RPC URI: 'a1.b2.c3.d4.e325' -->
        no exact match, 2 prefix matches (2,3), select longest one.
        Use RPC 3
-   Call request RPC URI: 'a1.b2.c55.d4.e5' \u002D->
+   Call request RPC URI: 'a1.b2.c55.d4.e5' -->
        no exact match, no prefix match, single wildcard match.
        Use RPC 4
-   Call request RPC URI: 'a1.b2.c3.d4.e5' \u002D->
+   Call request RPC URI: 'a1.b2.c3.d4.e5' -->
        no exact match, no prefix match, 2 wildcard matches (4,5),
        select longest one. Use RPC 5
-   Call request RPC URI: 'a1.b2.c88.d4.e5.f6.g7' \u002D->
+   Call request RPC URI: 'a1.b2.c88.d4.e5.f6.g7' -->
        no exact match, no prefix match, 2 wildcard matches (6,7),
        both having equal first portions (a1.b2), but RPC 6 has longer
        second portion (d4.e5). Use RPC 6
-   Call request RPC URI: 'a2.b2.c2.d2.e2' \u002D->
+   Call request RPC URI: 'a2.b2.c2.d2.e2' -->
        no exact match, no prefix match, no wildcard match.
        Return wamp.error.no_such_procedure
 
@@ -5056,7 +5056,7 @@ Internet-Draft                    WAMP                        April 2018
    register a procedure for the URI while the registration remains in
    existence.
 
-   With the other values, the *Dealer* MUST fail all subsequent attempst
+   With the other values, the *Dealer* MUST fail all subsequent attempts
    to register a procedure for the URI where the value for this option
    does not match that of the initial registration.
 
@@ -5127,12 +5127,59 @@ Internet-Draft                    WAMP                        April 2018
 
 14.3.11.  Registration Revocation
 
-14.3.11.1.  Feature Definition
+   Feature status: *alpha*
 
-   Actively and forcefully revoke a previously granted registration from
-   a session.
+14.3.11.1.  Feature Announcement
 
-14.3.11.2.  Feature Announcement
+   Support for this feature MUST be announced by _Callees_ (role :=
+   "callee") and _Dealers_ (role := "dealer") via
+
+       HELLO.Details.roles.<role>.features.
+            registration_revocation|bool := true
+
+   If the _Callee_ does not support registration_revocation, the
+   _Dealer_ may still revoke a registration to support administrative
+   functionality.  In this case, the _Dealer_ MUST NOT send an
+   *UNREGISTERED* message to the _Callee_. The _Callee_ MAY use the
+   registration meta event "wamp.registration.on_unregister" to
+   determine whether a session is removed from a registration.
+
+
+
+
+
+
+Oberstein & Goedde      Expires October 20, 2018               [Page 92]
+
+Internet-Draft                    WAMP                        April 2018
+
+
+14.3.11.2.  Feature Definition
+
+   This feature allows a _Dealer_ to actively revoke a previously
+   granted registration.  To achieve this, the existing UNREGISTERED
+   message is extended as described below.
+
+14.3.11.3.  Extending UNREGISTERED
+
+   When revoking a registration, the router has no request ID to reply
+   to.  So it's set to zero and another argument is appended to indicate
+   which registration to revoke.  Optionally, a reason why the
+   registration was revoked is also appended.
+
+       [UNREGISTERED, 0, Details|dict]
+
+   where
+
+   o  "Details.registration|bool" MUST be a previously issued
+      registration ID.
+
+   o  "Details.reason|string" MAY provide a reason as to why the
+      registration was revoked.
+
+   _Example_
+
+    [67, 0, {"registration": 1293722, "reason": "moving endpoint to other callee"}]
 
 14.3.12.  Procedure Reflection
 
@@ -5146,14 +5193,6 @@ Internet-Draft                    WAMP                        April 2018
    WAMP procedures and topics it is authorized to access or provide in
    the context of a WAMP session with a _Dealer_ or _Broker_.
 
-
-
-
-Oberstein & Goedde      Expires October 20, 2018               [Page 92]
-
-Internet-Draft                    WAMP                        April 2018
-
-
    Reflection may be useful in the following cases:
 
    o  documentation
@@ -5161,6 +5200,15 @@ Internet-Draft                    WAMP                        April 2018
    o  discoverability
 
    o  generating stubs and proxies
+
+
+
+
+
+Oberstein & Goedde      Expires October 20, 2018               [Page 93]
+
+Internet-Draft                    WAMP                        April 2018
+
 
    WAMP predefines the following procedures for performing run-time
    reflection on WAMP peers which act as _Brokers_ and/or _Dealers_.
@@ -5203,20 +5251,20 @@ Internet-Draft                    WAMP                        April 2018
 
        wamp.reflect.describe
 
-
-
-Oberstein & Goedde      Expires October 20, 2018               [Page 93]
-
-Internet-Draft                    WAMP                        April 2018
-
-
    *Reflection*
 
    A topic or procedure has been defined for reflection:
 
        wamp.reflect.on_define
 
-   A topic or procedure has been unfined from reflection:
+   A topic or procedure has been undefined from reflection:
+
+
+
+Oberstein & Goedde      Expires October 20, 2018               [Page 94]
+
+Internet-Draft                    WAMP                        April 2018
+
 
        wamp.reflect.on_undefine
 
@@ -5257,21 +5305,22 @@ Internet-Draft                    WAMP                        April 2018
    However, the application might want to exclude the originator of the
    product price update (the *Caller* of the price update procedure)
    from receiving the update event - as the originator naturally already
-
-
-
-
-Oberstein & Goedde      Expires October 20, 2018               [Page 94]
-
-Internet-Draft                    WAMP                        April 2018
-
-
    knows the new price, and might get confused when it receives an
    update the *Caller* has triggered himself.
 
    The product price update procedure can use
    "PUBLISH.Options.exclude|list[int]" to exclude the *Caller* of the
    procedure.
+
+
+
+
+
+
+Oberstein & Goedde      Expires October 20, 2018               [Page 95]
+
+Internet-Draft                    WAMP                        April 2018
+
 
       Note that the product price update procedure needs to know the
       session ID of the *Caller* to be able to exclude him.  For this,
@@ -5314,19 +5363,20 @@ Internet-Draft                    WAMP                        April 2018
 
    o  Whitelisting Options
 
-
-
-
-Oberstein & Goedde      Expires October 20, 2018               [Page 95]
-
-Internet-Draft                    WAMP                        April 2018
-
-
       *  "PUBLISH.Options.eligible|list[int]"
 
       *  "PUBLISH.Options.eligible_authid|list[string]"
 
       *  "PUBLISH.Options.eligible_authrole|list[string]"
+
+
+
+
+
+Oberstein & Goedde      Expires October 20, 2018               [Page 96]
+
+Internet-Draft                    WAMP                        April 2018
+
 
    "PUBLISH.Options.exclude" is a list of integers with WAMP
    "sessionids" providing an explicit list of (potential) _Subscribers_
@@ -5334,7 +5384,7 @@ Internet-Draft                    WAMP                        April 2018
    subscribed.  In other words, "PUBLISH.Options.exclude" is a
    *blacklist* of (potential) _Subscribers_.
 
-   "PUBLISH.Options.eligible" is a list of integeres with WAMP WAMP
+   "PUBLISH.Options.eligible" is a list of integers with WAMP WAMP
    "sessionids" providing an explicit list of (potential) _Subscribers_
    that are allowed to receive a published event.  In other words,
    "PUBLISH.Options.eligible" is a *whitelist* of (potential)
@@ -5369,19 +5419,20 @@ Internet-Draft                    WAMP                        April 2018
    For example, if both "PUBLISH.Options.exclude" and
    "PUBLISH.Options.eligible" are present, the _Broker_ will dispatch
    events published only to _Subscribers_ that are not explicitly
-
-
-
-
-Oberstein & Goedde      Expires October 20, 2018               [Page 96]
-
-Internet-Draft                    WAMP                        April 2018
-
-
    excluded in "PUBLISH.Options.exclude" *and* which are explicitly
    eligible via "PUBLISH.Options.eligible".
 
    _Example_
+
+
+
+
+
+
+Oberstein & Goedde      Expires October 20, 2018               [Page 97]
+
+Internet-Draft                    WAMP                        April 2018
+
 
        [
           16,
@@ -5429,7 +5480,12 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018               [Page 97]
+
+
+
+
+
+Oberstein & Goedde      Expires October 20, 2018               [Page 98]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -5485,7 +5541,7 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018               [Page 98]
+Oberstein & Goedde      Expires October 20, 2018               [Page 99]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -5541,7 +5597,7 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018               [Page 99]
+Oberstein & Goedde      Expires October 20, 2018              [Page 100]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -5597,7 +5653,7 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 100]
+Oberstein & Goedde      Expires October 20, 2018              [Page 101]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -5653,7 +5709,7 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 101]
+Oberstein & Goedde      Expires October 20, 2018              [Page 102]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -5709,7 +5765,7 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 102]
+Oberstein & Goedde      Expires October 20, 2018              [Page 103]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -5765,7 +5821,7 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 103]
+Oberstein & Goedde      Expires October 20, 2018              [Page 104]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -5776,9 +5832,7 @@ Internet-Draft                    WAMP                        April 2018
 
    Retrieves subscription IDs listed according to match policies.
 
-   *Arguments*
-
-   o  None
+   *Arguments* - None
 
    *Results*
 
@@ -5821,7 +5875,9 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 104]
+
+
+Oberstein & Goedde      Expires October 20, 2018              [Page 105]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -5877,7 +5933,7 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 105]
+Oberstein & Goedde      Expires October 20, 2018              [Page 106]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -5887,10 +5943,8 @@ Internet-Draft                    WAMP                        April 2018
    Retrieves a list of session IDs for sessions currently attached to
    the subscription.
 
-   *Arguments*
-
-   o  "subscription|id": The ID of the subscription to get subscribers
-      for.
+   *Arguments* - "subscription|id": The ID of the subscription to get
+   subscribers for.
 
    *Results*
 
@@ -5927,21 +5981,19 @@ Internet-Draft                    WAMP                        April 2018
 
 14.4.6.  Pattern-based Subscriptions
 
+14.4.6.1.  Introduction
+
+   By default, _Subscribers_ subscribe to topics with *exact matching
+   policy*. That is an event will only be dispatched to a _Subscriber_
 
 
 
 
-
-
-Oberstein & Goedde      Expires October 20, 2018              [Page 106]
+Oberstein & Goedde      Expires October 20, 2018              [Page 107]
 
 Internet-Draft                    WAMP                        April 2018
 
 
-14.4.6.1.  Introdution
-
-   By default, _Subscribers_ subscribe to topics with *exact matching
-   policy*. That is an event will only be dispatched to a _Subscriber_
    by the _Broker_ if the topic published to ("PUBLISH.Topic") _exactly_
    matches the topic subscribed to ("SUBSCRIBE.Topic").
 
@@ -5986,17 +6038,17 @@ Internet-Draft                    WAMP                        April 2018
 
    o  "com.myapp.topic.emergency-low"
 
-
-
-
-Oberstein & Goedde      Expires October 20, 2018              [Page 107]
-
-Internet-Draft                    WAMP                        April 2018
-
-
    o  "com.myapp.topic.emergency.category.severe"
 
    o  "com.myapp.topic.emergency"
+
+
+
+
+Oberstein & Goedde      Expires October 20, 2018              [Page 108]
+
+Internet-Draft                    WAMP                        April 2018
+
 
    will all apply for dispatching.  An event with "PUBLISH.Topic" e.g.
    "com.myapp.topic.emerge" will not apply.
@@ -6045,7 +6097,11 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 108]
+
+
+
+
+Oberstein & Goedde      Expires October 20, 2018              [Page 109]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -6101,7 +6157,7 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 109]
+Oberstein & Goedde      Expires October 20, 2018              [Page 110]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -6157,7 +6213,7 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 110]
+Oberstein & Goedde      Expires October 20, 2018              [Page 111]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -6213,7 +6269,7 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 111]
+Oberstein & Goedde      Expires October 20, 2018              [Page 112]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -6249,30 +6305,64 @@ Internet-Draft                    WAMP                        April 2018
 
        HELLO.Details.roles.<role>.features.event_history|bool := true
 
-14.4.9.  Registration Revocation
+14.4.9.  Subscription Revocation
 
-14.4.9.1.  Feature Definition
+   Feature status: *alpha*
 
-   Actively and forcefully revoke a previously granted subscription from
-   a session.
+14.4.9.1.  Feature Announcement
 
-14.4.9.2.  Feature Announcement
+   Support for this feature MUST be announced by _Subscribers_ (role :=
+   "subscriber") and _Brokers_ (role := "broker") via
+
+       HELLO.Details.roles.<role>.features.
+            subscription_revocation|bool := true
+
+   If the _Subscriber_ does not support subscription_revocation, the
+   _Broker_ MAY still revoke a subscription to support administrative
+   functionality.  In this case, the _Broker_ MUST NOT send an
+   *UNSUBSCRIBED* message to the _Subscriber_. The _Subscriber_ MAY use
+
+
+
+
+Oberstein & Goedde      Expires October 20, 2018              [Page 113]
+
+Internet-Draft                    WAMP                        April 2018
+
+
+   the subscription meta event "wamp.subscription.on_unsubscribe" to
+   determine whether a session is removed from a subscription.
+
+14.4.9.2.  Feature Definition
+
+   This feature allows a _Broker_ to actively revoke a previously
+   granted subscription.  To achieve this, the existing UNSUBSCRIBED
+   message is extended as described below.
+
+14.4.9.3.  Extending UNSUBSCRIBED
+
+   When revoking a subscription, the router has no request ID to reply
+   to.  So it's set to zero and another argument is appended to indicate
+   which subscription to revoke.  Optionally, a reason why the
+   subscription was revoked is also appended.
+
+       [UNSUBSCRIBED, 0, Details|dict]
+
+   where
+
+   o  "Details.subscription|bool" MUST be a previously issued
+      subscription ID.
+
+   o  "Details.reason|string" MAY provide a reason as to why the
+      subscription was revoked.
+
+   _Example_
+
+    [35, 0, {"subscription": 1293722, "reason": "no longer authorized"}]
 
 14.4.10.  Topic Reflection
 
    o  see *Procedure Reflection* for now
-
-
-
-
-
-
-
-
-Oberstein & Goedde      Expires October 20, 2018              [Page 112]
-
-Internet-Draft                    WAMP                        April 2018
-
 
 14.4.11.  Testament
 
@@ -6289,6 +6379,13 @@ Internet-Draft                    WAMP                        April 2018
    Resumption) or destroyed (when the WAMP session no longer exists on
    the server).
 
+
+
+Oberstein & Goedde      Expires October 20, 2018              [Page 114]
+
+Internet-Draft                    WAMP                        April 2018
+
+
    This allows clients that otherwise would not be able to know when
    other clients disconnect get a notification (for example, by using
    the WAMP Session Meta API) with a format the disconnected client
@@ -6299,11 +6396,11 @@ Internet-Draft                    WAMP                        April 2018
    A _Client_ can call the following procedures to set/flush Testaments:
 
    o  "wamp.session.add_testament" to add a Testament which will be
-      published on a particular topic when the Session is detatched or
+      published on a particular topic when the Session is detached or
       destroyed.
 
    o  "wamp.session.flush_testaments" to remove the Testaments for that
-      Session, either for when it is detatched or destroyed.
+      Session, either for when it is detached or destroyed.
 
 14.4.11.2.1.  wamp.session.add_testament
 
@@ -6321,22 +6418,13 @@ Internet-Draft                    WAMP                        April 2018
 
    1.  "publish_options|dict" - options for the event when it is
        published -- see "Publish.Options".  Not all options may be
-
-
-
-
-Oberstein & Goedde      Expires October 20, 2018              [Page 113]
-
-Internet-Draft                    WAMP                        April 2018
-
-
        honoured (for example, "acknowledge").  By default, there are no
        options.
 
    2.  "scope|string" - When the testament should be published.  Valid
-       values are "detatched" (when the WAMP session is detatched, for
+       values are "detached" (when the WAMP session is detached, for
        example, when using Event Retention) or "destroyed" (when the
-       WAMP session is finalised and destroyed on the Broker).  Default
+       WAMP session is finalized and destroyed on the Broker).  Default
        MUST be "destroyed".
 
    "wamp.session.add_testament" does not return a value.
@@ -6346,6 +6434,13 @@ Internet-Draft                    WAMP                        April 2018
    Removes testaments for the given scope:
 
    *Keyword arguments*
+
+
+
+Oberstein & Goedde      Expires October 20, 2018              [Page 115]
+
+Internet-Draft                    WAMP                        April 2018
+
 
    1.  "scope|string" - Which set of testaments to be removed.  Valid
        values are the same as "wamp.session.add_testament", and the
@@ -6365,41 +6460,43 @@ Internet-Draft                    WAMP                        April 2018
                    'com.myapp.mytopic', ['Seeya!'], {'my_name': 'app1'})
 
    The _Router_ will then store this information on the WAMP Session,
-   either in a "detatched" or "destroyed" bucket, in the order they were
+   either in a "detached" or "destroyed" bucket, in the order they were
    added.  A client MUST be able to set multiple testaments per-scope.
    If the _Router_ does not support Session Resumption (therefore
    removing the distinction between a detached and destroyed session),
    it MUST still use these two separate buckets to allow
    "wamp.session.flush_testaments" to work.
 
-   When a _Session_ is _detatched_, the _Router_ will inspect it for any
+   When a _Session_ is _detached_, the _Router_ will inspect it for any
    Testaments in the "detached" scope, and publish them in the order
-   that the Router recieved them, on the specified topic, with the
+   that the Router received them, on the specified topic, with the
    specified arguments, keyword arguments, and publish options.  The
    _Router_ MAY ignore publish options that do not make sense for a
    Testament (for example, acknowledged publishes).
 
-
-
-Oberstein & Goedde      Expires October 20, 2018              [Page 114]
-
-Internet-Draft                    WAMP                        April 2018
-
-
    When a _Session_ is going to be _destroyed_, the _Router_ will
    inspect it for any Testaments in the "destroyed" scope, and publish
    them in the same way as it would for the "detached" scope, in the
-   order that they were recieved.
+   order that they were received.
 
    A _Router_ that does not allow Session Resumption MUST send
-   "detatched"-scope Testaments before "destroyed"-scope Testaments.
+   "detached"-scope Testaments before "destroyed"-scope Testaments.
 
    A _Client_ can also clear testaments if the information is no longer
    relevant (for example, it is shutting down completely cleanly).  For
    example, a client may call "wamp.session.flush_testaments":
 
-    yield self.call('wamp.session.flush_testaments', scope='detatched')
+    yield self.call('wamp.session.flush_testaments', scope='detached')
     yield self.call('wamp.session.flush_testaments', scope='destroyed')
+
+
+
+
+
+Oberstein & Goedde      Expires October 20, 2018              [Page 116]
+
+Internet-Draft                    WAMP                        April 2018
+
 
    The _Router_ will then flush all Testaments stored for the given
    scope.
@@ -6432,16 +6529,6 @@ Internet-Draft                    WAMP                        April 2018
       the *Session Meta API*, as it requires both roles to support this
       feature.
 
-
-
-
-
-
-Oberstein & Goedde      Expires October 20, 2018              [Page 115]
-
-Internet-Draft                    WAMP                        April 2018
-
-
 14.5.1.2.  Session Meta Events
 
    A client can subscribe to the following session meta-events, which
@@ -6455,6 +6542,17 @@ Internet-Draft                    WAMP                        April 2018
 
    *Session Meta Events* MUST be dispatched by the _Router_ to the same
    realm as the WAMP session which triggered the event.
+
+
+
+
+
+
+
+Oberstein & Goedde      Expires October 20, 2018              [Page 117]
+
+Internet-Draft                    WAMP                        April 2018
+
 
 14.5.1.2.1.  wamp.session.on_join
 
@@ -6483,25 +6581,19 @@ Internet-Draft                    WAMP                        April 2018
 14.5.1.2.2.  wamp.session.on_leave
 
    Fired when a session leaves a realm on the router or is disconnected.
-   The event payload consists of a single positional argument
-   "session|id" with the session ID of the session that left.
+   The event payload consists of three positional arguments:
 
+   o  "session|id" - The session ID of the session that left
 
+   o  "authid"|string` - The authentication ID of the session that left
 
-
-
-
-
-
-Oberstein & Goedde      Expires October 20, 2018              [Page 116]
-
-Internet-Draft                    WAMP                        April 2018
-
+   o  "authrole|string" - The authentication role of the session that
+      left
 
 14.5.1.3.  Session Meta Procedures
 
-   A client can actively retrieve information about sessions via the
-   following meta-procedures:
+   A client can actively retrieve information about sessions, or
+   forcefully close sessions, via the following meta-procedures:
 
    o  "wamp.session.count": Obtains the number of sessions currently
       attached to the realm.
@@ -6511,12 +6603,31 @@ Internet-Draft                    WAMP                        April 2018
 
    o  "wamp.session.get": Retrieves information on a specific session.
 
+
+
+Oberstein & Goedde      Expires October 20, 2018              [Page 118]
+
+Internet-Draft                    WAMP                        April 2018
+
+
+   o  "wamp.session.kill": Kill a single session identified by session
+      ID.
+
+   o  "wamp.session.kill_by_authid": Kill all currently connected
+      sessions that have the specified authid.
+
+   o  "wamp.session.kill_by_authrole": Kill all currently connected
+      sessions that have the specified authrole.
+
+   o  "wamp.session.kill_all": Kill all currently connected sessions in
+      the caller's realm.
+
    Session meta procedures MUST be registered by the _Router_ on the
    same realm as the WAMP session about which information is retrieved.
 
 14.5.1.3.1.  wamp.session.count
 
-   Obtains the number of sessions currently attached to the realm:
+   Obtains the number of sessions currently attached to the realm.
 
    *Positional arguments*
 
@@ -6542,23 +6653,18 @@ Internet-Draft                    WAMP                        April 2018
 
    1.  "session_ids|list" - List of WAMP session IDs (order undefined).
 
-
-
-
-
-
-
-
-Oberstein & Goedde      Expires October 20, 2018              [Page 117]
-
-Internet-Draft                    WAMP                        April 2018
-
-
 14.5.1.3.3.  wamp.session.get
 
    Retrieves information on a specific session.
 
    *Positional arguments*
+
+
+
+Oberstein & Goedde      Expires October 20, 2018              [Page 119]
+
+Internet-Draft                    WAMP                        April 2018
+
 
    1.  "session|id" - The session ID of the session to retrieve details
        for.
@@ -6593,6 +6699,163 @@ Internet-Draft                    WAMP                        April 2018
    o  "wamp.error.no_such_session" - No session with the given ID exists
       on the router.
 
+14.5.1.3.4.  wamp.session.kill
+
+   Kill a single session identified by session ID.
+
+   The caller of this meta procedure may only specify session IDs other
+   than its own session.  Specifying the caller's own session will
+   result in a "wamp.error.no_such_session" since no _other_ session
+   with that ID exists.
+
+   The keyword arguments are optional, and if not provided the reason
+   defaults to "wamp.close.normal" and the message is omitted from the
+   "GOODBYE" sent to the closed session.
+
+   *Positional arguments*
+
+
+
+
+Oberstein & Goedde      Expires October 20, 2018              [Page 120]
+
+Internet-Draft                    WAMP                        April 2018
+
+
+   1.  "session|id" - The session ID of the session to close.
+
+   *Keyword arguments*
+
+   1.  "reason|uri" - reason for closing session, sent to client in
+       "GOODBYE.Reason".
+
+   2.  "message|string" - additional information sent to client in
+       "GOODBYE.Details" under the key "message".
+
+   *Errors*
+
+   o  "wamp.error.no_such_session" - No session with the given ID exists
+      on the router.
+
+   o  "wamp.error.invalid_uri" - A "reason" keyword argument has a value
+      that is not a valid non-empty URI.
+
+14.5.1.3.5.  wamp.session.kill_by_authid
+
+   Kill all currently connected sessions that have the specified
+   "authid".
+
+   If the caller's own session has the specified "authid", the caller's
+   session is excluded from the closed sessions.
+
+   The keyword arguments are optional, and if not provided the reason
+   defaults to "wamp.close.normal" and the message is omitted from the
+   "GOODBYE" sent to the closed session.
+
+   *Positional arguments*
+
+   1.  "authid|string" - The authentication ID identifying sessions to
+       close.
+
+   *Keyword arguments*
+
+   1.  "reason|uri" - reason for closing sessions, sent to clients in
+       "GOODBYE.Reason"
+
+   2.  "message|string" - additional information sent to clients in
+       "GOODBYE.Details" under the key "message".
+
+   *Positional results*
+
+   1.  "count|int" - The number of sessions closed by this meta
+       procedure.
+
+
+
+
+Oberstein & Goedde      Expires October 20, 2018              [Page 121]
+
+Internet-Draft                    WAMP                        April 2018
+
+
+   *Errors*
+
+   o  "wamp.error.invalid_uri" - A "reason" keyword argument has a value
+      that is not a valid non-empty URI.
+
+14.5.1.3.6.  wamp.session.kill_by_authrole
+
+   Kill all currently connected sessions that have the specified
+   "authrole".
+
+   If the caller's own session has the specified "authrole", the
+   caller's session is excluded from the closed sessions.
+
+   The keyword arguments are optional, and if not provided the reason
+   defaults to "wamp.close.normal" and the message is omitted from the
+   "GOODBYE" sent to the closed session.
+
+   *Positional arguments*
+
+   1.  "authrole|string" - The authentication role identifying sessions
+       to close.
+
+   *Keyword arguments*
+
+   1.  "reason|uri" - reason for closing sessions, sent to clients in
+       "GOODBYE.Reason"
+
+   2.  "message|string" - additional information sent to clients in
+       "GOODBYE.Details" under the key "message".
+
+   *Positional results*
+
+   1.  "count|int" - The number of sessions closed by this meta
+       procedure.
+
+   *Errors*
+
+   o  "wamp.error.invalid_uri" - A "reason" keyword argument has a value
+      that is not a valid non-empty URI.
+
+14.5.1.3.7.  wamp.session.kill_all
+
+   Kill all currently connected sessions in the caller's realm.
+
+   The caller's own session is excluded from the closed sessions.
+   Closing all sessions in the realm will not generate session meta
+   events or testament events, since no subscribers would remain to
+   receive these events.
+
+
+
+Oberstein & Goedde      Expires October 20, 2018              [Page 122]
+
+Internet-Draft                    WAMP                        April 2018
+
+
+   The keyword arguments are optional, and if not provided the reason
+   defaults to "wamp.close.normal" and the message is omitted from the
+   "GOODBYE" sent to the closed session.
+
+   *Keyword arguments*
+
+   1.  "reason|uri" - reason for closing sessions, sent to clients in
+       "GOODBYE.Reason"
+
+   2.  "message|string" - additional information sent to clients in
+       "GOODBYE.Details" under the key "message".
+
+   *Positional results*
+
+   1.  "count|int" - The number of sessions closed by this meta
+       procedure.
+
+   *Errors*
+
+   o  "wamp.error.invalid_uri" - A "reason" keyword argument has a value
+      that is not a valid non-empty URI.
+
 14.5.1.4.  Feature Announcement
 
    Support for this feature MUST be announced by *both* _Dealers_ and
@@ -6603,15 +6866,29 @@ Internet-Draft                    WAMP                        April 2018
 
    *Example*
 
+   Here is a "WELCOME" message from a _Router_ with support for both the
+   _Broker_ and _Dealer_ role, and with support for *Session Meta API*:
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 118]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Oberstein & Goedde      Expires October 20, 2018              [Page 123]
 
 Internet-Draft                    WAMP                        April 2018
 
-
-   Here is a "WELCOME" message from a _Router_ with support for both the
-   _Broker_ and _Dealer_ role, and with support for *Session Meta API*:
 
        [
            2,
@@ -6658,16 +6935,16 @@ Internet-Draft                    WAMP                        April 2018
    schemes by using basic WAMP mechanisms, e.g. by using application-
    defined remote procedure calls.
 
+   And some applications might want to use a transport independent
+   scheme, nevertheless predefined by WAMP.
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 119]
+
+Oberstein & Goedde      Expires October 20, 2018              [Page 124]
 
 Internet-Draft                    WAMP                        April 2018
 
-
-   And some applications might want to use a transport independent
-   scheme, nevertheless predefined by WAMP.
 
 14.5.2.1.  WAMP-level Authentication
 
@@ -6715,14 +6992,15 @@ Internet-Draft                    WAMP                        April 2018
    To request authentication, the Router MUST send a "CHALLENGE" message
    to the _Endpoint_.
 
+       [CHALLENGE, AuthMethod|string, Extra|dict]
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 120]
+
+
+Oberstein & Goedde      Expires October 20, 2018              [Page 125]
 
 Internet-Draft                    WAMP                        April 2018
 
-
-       [CHALLENGE, AuthMethod|string, Extra|dict]
 
 14.5.2.1.2.  AUTHENTICATE
 
@@ -6769,18 +7047,16 @@ Internet-Draft                    WAMP                        April 2018
    sharing of the secret is outside the scope of the authentication
    mechanism.
 
-
-
-
-
-Oberstein & Goedde      Expires October 20, 2018              [Page 121]
-
-Internet-Draft                    WAMP                        April 2018
-
-
    A typical authentication begins with the client sending a "HELLO"
    message specifying the "wampcra" method as (one of) the
    authentication methods:
+
+
+
+Oberstein & Goedde      Expires October 20, 2018              [Page 126]
+
+Internet-Draft                    WAMP                        April 2018
+
 
        [1, "realm1",
            {
@@ -6827,14 +7103,16 @@ Internet-Draft                    WAMP                        April 2018
    2.  "authrole|string": The authentication role the client will be
        authenticated as when the authentication succeeds.
 
+   3.  "authmethod|string": The authentication methods, here ""wampcra""
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 122]
+
+
+
+Oberstein & Goedde      Expires October 20, 2018              [Page 127]
 
 Internet-Draft                    WAMP                        April 2018
 
-
-   3.  "authmethod|string": The authentication methods, here ""wampcra""
 
    4.  "authprovider|string": The actual provider of authentication.
        For WAMP-CRA, this can be freely chosen by the app, e.g.
@@ -6882,16 +7160,15 @@ Internet-Draft                    WAMP                        April 2018
    The "WELCOME.Details" again contain the actual authentication
    information active.
 
+   If the authentication fails, the server will response with an "ABORT"
+   message.
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 123]
+Oberstein & Goedde      Expires October 20, 2018              [Page 128]
 
 Internet-Draft                    WAMP                        April 2018
 
-
-   If the authentication fails, the server will response with an "ABORT"
-   message.
 
 14.5.2.3.1.  Server-side Verification
 
@@ -6929,7 +7206,7 @@ Internet-Draft                    WAMP                        April 2018
 
    This scenario is also the reason the challenge sent with WAMP-CRA is
    not simply a random value, but a JSON serialized object containing
-   sufficient authentication information for the thrid party to check.
+   sufficient authentication information for the third party to check.
 
 14.5.2.3.3.  Password Salting
 
@@ -6938,17 +7215,17 @@ Internet-Draft                    WAMP                        April 2018
    secret on the client and the server - and storing a password verbatim
    (unencrypted) is not recommended in general.
 
+   WAMP-CRA allows the use of salted passwords following the PBKDF2 [5]
+   key derivation scheme.  With salted passwords, the password itself is
+   never stored, but only a key derived from the password and a password
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 124]
+Oberstein & Goedde      Expires October 20, 2018              [Page 129]
 
 Internet-Draft                    WAMP                        April 2018
 
 
-   WAMP-CRA allows the use of salted passwords following the PBKDF2 [5]
-   key derivation scheme.  With salted passwords, the password itself is
-   never stored, but only a key derived from the password and a password
    salt.  This derived key is then practically working as the new shared
    secret.
 
@@ -6997,7 +7274,10 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 125]
+
+
+
+Oberstein & Goedde      Expires October 20, 2018              [Page 130]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -7053,7 +7333,7 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 126]
+Oberstein & Goedde      Expires October 20, 2018              [Page 131]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -7102,19 +7382,19 @@ Internet-Draft                    WAMP                        April 2018
    that user on all servers using the same salt.  That's why it's
    important to use a per-user random salt.
 
-   An evesdropper that captures a user anthentication exchange has
+   An eavesdropper that captures a user authentication exchange has
    enough information to mount an offline, brute-force dictionary attack
    for that particular user.  If passwords are sufficiently strong, the
    cost/time needed to crack a password becomes prohibitive.
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 127]
+Oberstein & Goedde      Expires October 20, 2018              [Page 132]
 
 Internet-Draft                    WAMP                        April 2018
 
 
-   Note that when HTML/Javascript assets are served to a web browser,
+   Note that when HTML/JavaScript assets are served to a web browser,
    WAMP-SCRAM does not safeguard against a man-in-the-middle tampering
    with those assets.  Those assets could be tampered with in a way that
    captures the user's password and sends it to the attacker.
@@ -7165,7 +7445,7 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 128]
+Oberstein & Goedde      Expires October 20, 2018              [Page 133]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -7202,7 +7482,7 @@ Internet-Draft                    WAMP                        April 2018
    algorithm described in RFC3454 [18].
 
    While SASLprep preserves the case of usernames, the server MAY choose
-   to perform case insensitve comparisons when searching for a username
+   to perform case insensitive comparisons when searching for a username
    in the authentication database.
 
 14.5.2.5.5.  Channel Binding
@@ -7221,7 +7501,7 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 129]
+Oberstein & Goedde      Expires October 20, 2018              [Page 134]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -7243,7 +7523,7 @@ Internet-Draft                    WAMP                        April 2018
    to the bytes of the first TLS Finished message, as described in
    RFC5929, section 3 [22].  RFC5929 section 10.2 [23] addresses the
    concern of disclosing this data over the TLS channel (in short, the
-   TLS Finished message would already be visible to evesdroppers).
+   TLS Finished message would already be visible to eavesdroppers).
 
    To safeguard against the _triple handshake attack_ described in
    RFC7627 [24], this channel binding type MUST be used over a TLS
@@ -7257,8 +7537,8 @@ Internet-Draft                    WAMP                        April 2018
    connection to a server having been issued a Public Key Infrastructure
    Certificate.  The channel binding data for this type is a hash of the
    TLS server's certificate, computed as described in RFC5929, section
-   4.1 [25].  The certificate is hashed to accomodate memory-constrained
-   implementations.
+   4.1 [25].  The certificate is hashed to accommodate memory-
+   constrained implementations.
 
 14.5.2.5.6.  Authentication Exchange
 
@@ -7277,20 +7557,20 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 130]
+Oberstein & Goedde      Expires October 20, 2018              [Page 135]
 
 Internet-Draft                    WAMP                        April 2018
 
 
-      +--------------------------------------------+----------------+
-      |               SCRAM Message                |  WAMP Message  |
-      +--------------------------------------------+----------------+
-      |           "client-first-message"           |    "HELLO"     |
-      |           "server-first-message"           |  "CHALLENGE"   |
-      |           "client-final-message"           | "AUTHENTICATE" |
-      |   "server-final-message" with "verifier"   |   "WELCOME"    |
-      | "server-final-message" with "server-error" |    "ABORT"     |
-      +--------------------------------------------+----------------+
+   +--------------------------------------------+----------------+
+   |               SCRAM Message                |  WAMP Message  |
+   +--------------------------------------------+----------------+
+   |           "client-first-message"           |    "HELLO"     |
+   |           "server-first-message"           |  "CHALLENGE"   |
+   |           "client-final-message"           | "AUTHENTICATE" |
+   |   "server-final-message" with "verifier"   |   "WELCOME"    |
+   | "server-final-message" with "server-error" |    "ABORT"     |
+   +--------------------------------------------+----------------+
 
 14.5.2.5.6.1.  Initial Client Authentication Message
 
@@ -7333,7 +7613,7 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 131]
+Oberstein & Goedde      Expires October 20, 2018              [Page 136]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -7370,9 +7650,9 @@ Internet-Draft                    WAMP                        April 2018
 
    where:
 
-   1.  "nonce|string": A server-generatated nonce that is appended to
-       the client-generated nonce sent in the previous "HELLO" message.
-       See Section 14.5.2.5.4.2.
+   1.  "nonce|string": A server-generated nonce that is appended to the
+       client-generated nonce sent in the previous "HELLO" message.  See
+       Section 14.5.2.5.4.2.
 
    2.  "salt|string": The base64-encoded salt for this user, to be
        passed to the key derivation function.  This value is stored with
@@ -7389,7 +7669,7 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 132]
+Oberstein & Goedde      Expires October 20, 2018              [Page 137]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -7445,7 +7725,7 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 133]
+Oberstein & Goedde      Expires October 20, 2018              [Page 138]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -7501,7 +7781,7 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 134]
+Oberstein & Goedde      Expires October 20, 2018              [Page 139]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -7557,7 +7837,7 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 135]
+Oberstein & Goedde      Expires October 20, 2018              [Page 140]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -7613,7 +7893,7 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 136]
+Oberstein & Goedde      Expires October 20, 2018              [Page 141]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -7669,7 +7949,7 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 137]
+Oberstein & Goedde      Expires October 20, 2018              [Page 142]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -7725,7 +8005,7 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 138]
+Oberstein & Goedde      Expires October 20, 2018              [Page 143]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -7781,7 +8061,7 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 139]
+Oberstein & Goedde      Expires October 20, 2018              [Page 144]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -7794,7 +8074,7 @@ Internet-Draft                    WAMP                        April 2018
    The PBKDF2 key derivation function, defined in RFC2898 [35], is used
    with SHA-256 as the pseudorandom function (PRF).
 
-   The PDBKDF2 hash is computed using the folowing parameters:
+   The PDBKDF2 hash is computed using the following parameters:
 
    o  "CHALLENGE.Details.salt" as the cryptographic salt,
 
@@ -7837,7 +8117,7 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 140]
+Oberstein & Goedde      Expires October 20, 2018              [Page 145]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -7893,7 +8173,7 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 141]
+Oberstein & Goedde      Expires October 20, 2018              [Page 146]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -7949,7 +8229,7 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 142]
+Oberstein & Goedde      Expires October 20, 2018              [Page 147]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -8005,7 +8285,7 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 143]
+Oberstein & Goedde      Expires October 20, 2018              [Page 148]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -8061,7 +8341,7 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 144]
+Oberstein & Goedde      Expires October 20, 2018              [Page 149]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -8117,7 +8397,7 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 145]
+Oberstein & Goedde      Expires October 20, 2018              [Page 150]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -8173,7 +8453,7 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 146]
+Oberstein & Goedde      Expires October 20, 2018              [Page 151]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -8229,7 +8509,7 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 147]
+Oberstein & Goedde      Expires October 20, 2018              [Page 152]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -8285,7 +8565,7 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 148]
+Oberstein & Goedde      Expires October 20, 2018              [Page 153]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -8341,7 +8621,7 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 149]
+Oberstein & Goedde      Expires October 20, 2018              [Page 154]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -8397,7 +8677,7 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 150]
+Oberstein & Goedde      Expires October 20, 2018              [Page 155]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -8453,7 +8733,7 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 151]
+Oberstein & Goedde      Expires October 20, 2018              [Page 156]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -8509,7 +8789,7 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 152]
+Oberstein & Goedde      Expires October 20, 2018              [Page 157]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -8519,35 +8799,35 @@ Internet-Draft                    WAMP                        April 2018
    Here is a complete example in Python showing how byte arrays are
    converted to and from JSON:
 
-       <CODE BEGINS>
+            <CODE BEGINS>
 
-       import os, base64, json, sys, binascii
-       PY3 = sys.version_info >= (3,)
-       if PY3:
-          unicode = str
+            import os, base64, json, sys, binascii
+            PY3 = sys.version_info >= (3,)
+            if PY3:
+               unicode = str
 
-       data_in = os.urandom(16)
-       print("In:   {}".format(binascii.hexlify(data_in)))
+            data_in = os.urandom(16)
+            print("In:   {}".format(binascii.hexlify(data_in)))
 
-       ## encoding
-       encoded = json.dumps('\0' + base64.b64encode(data_in).
-                                             decode('ascii'))
+            ## encoding
+            encoded = json.dumps('\0' + base64.b64encode(data_in).
+                                                  decode('ascii'))
 
-       print("JSON: {}".format(encoded))
+            print("JSON: {}".format(encoded))
 
-       ## decoding
-       decoded = json.loads(encoded)
-       if type(decoded) == unicode:
-          if decoded[0] == '\0':
-             data_out = base64.b64decode(decoded[1:])
-          else:
-             data_out = decoded
+            ## decoding
+            decoded = json.loads(encoded)
+            if type(decoded) == unicode:
+               if decoded[0] == '\0':
+                  data_out = base64.b64decode(decoded[1:])
+               else:
+                  data_out = decoded
 
-       print("Out:  {}".format(binascii.hexlify(data_out)))
+            print("Out:  {}".format(binascii.hexlify(data_out)))
 
-       assert(data_out == data_in)
+            assert(data_out == data_in)
 
-       <CODE ENDS>
+            <CODE ENDS>
 
 15.2.  JavaScript
 
@@ -8565,52 +8845,50 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 153]
+Oberstein & Goedde      Expires October 20, 2018              [Page 158]
 
 Internet-Draft                    WAMP                        April 2018
 
 
-       <CODE BEGINS>
+        <CODE BEGINS>
+        var data_in = new Uint8Array(new ArrayBuffer(16));
 
-       var data_in = new Uint8Array(new ArrayBuffer(16));
+        // initialize test data
+        for (var i = 0; i < data_in.length; ++i) {
+           data_in[i] = i;
+        }
+        console.log(data_in);
 
-       // initialize test data
-       for (var i = 0; i < data_in.length; ++i) {
-          data_in[i] = i;
-       }
-       console.log(data_in);
+        // convert byte array to raw string
+        var raw_out = '';
+        for (var i = 0; i < data_in.length; ++i) {
+           raw_out += String.fromCharCode(data_in[i]);
+        }
 
-       // convert byte array to raw string
-       var raw_out = '';
-       for (var i = 0; i < data_in.length; ++i) {
-          raw_out += String.fromCharCode(data_in[i]);
-       }
+        // base64 encode raw string, prepend with \0
+        // and serialize to JSON
+        var encoded = JSON.stringify("\0" + window.btoa(raw_out));
+        console.log(encoded); // "\u0000AAECAwQFBgcICQoLDA0ODw=="
 
-       // base64 encode raw string, prepend with \0
-       // and serialize to JSON
-       var encoded = JSON.stringify("\0" + window.btoa(raw_out));
-       console.log(encoded); // "\u0000AAECAwQFBgcICQoLDA0ODw=="
+        // unserialize from JSON
+        var decoded = JSON.parse(encoded);
 
-       // unserialize from JSON
-       var decoded = JSON.parse(encoded);
+        var data_out;
+        if (decoded.charCodeAt(0) === 0) {
+           // strip first character and decode base64 to raw string
+           var raw = window.atob(decoded.substring(1));
 
-       var data_out;
-       if (decoded.charCodeAt(0) === 0) {
-          // strip first character and decode base64 to raw string
-          var raw = window.atob(decoded.substring(1));
+           // convert raw string to byte array
+           var data_out = new Uint8Array(new ArrayBuffer(raw.length));
+           for (var i = 0; i < raw.length; ++i) {
+              data_out[i] = raw.charCodeAt(i);
+           }
+        } else {
+           data_out = decoded;
+        }
 
-          // convert raw string to byte array
-          var data_out = new Uint8Array(new ArrayBuffer(raw.length));
-          for (var i = 0; i < raw.length; ++i) {
-             data_out[i] = raw.charCodeAt(i);
-          }
-       } else {
-          data_out = decoded;
-       }
-
-       console.log(data_out);
-
-       <CODE ENDS>
+        console.log(data_out);
+        <CODE ENDS>
 
 16.  Security Considerations
 
@@ -8621,7 +8899,9 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 154]
+
+
+Oberstein & Goedde      Expires October 20, 2018              [Page 159]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -8677,7 +8957,7 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 155]
+Oberstein & Goedde      Expires October 20, 2018              [Page 160]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -8709,8 +8989,8 @@ Internet-Draft                    WAMP                        April 2018
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
-              DOI 10.17487/RFC2119, March 1997, <https://www.rfc-
-              editor.org/info/rfc2119>.
+              DOI 10.17487/RFC2119, March 1997,
+              <https://www.rfc-editor.org/info/rfc2119>.
 
 20.3.  URIs
 
@@ -8733,7 +9013,7 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 156]
+Oberstein & Goedde      Expires October 20, 2018              [Page 161]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -8789,7 +9069,7 @@ Internet-Draft                    WAMP                        April 2018
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 157]
+Oberstein & Goedde      Expires October 20, 2018              [Page 162]
 
 Internet-Draft                    WAMP                        April 2018
 
@@ -8845,4 +9125,4 @@ Authors' Addresses
 
 
 
-Oberstein & Goedde      Expires October 20, 2018              [Page 158]
+Oberstein & Goedde      Expires October 20, 2018              [Page 163]
